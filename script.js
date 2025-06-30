@@ -1,4 +1,7 @@
 function stringChop(str, size) {
+	if (typeof str !== "string" || !Number.isInteger(size) || size <= 0) {
+    return [];
+  }
   let chunks =[];
 
 	for(let i=0;i<str.length;i+=size){
